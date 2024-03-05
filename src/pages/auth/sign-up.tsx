@@ -90,6 +90,18 @@ export function SignUp() {
             <Button className="w-full" type="submit" disabled={isSubmitting}>
               Acessar painel
             </Button>
+
+            <p className="px-6 text-center text-sm leading-relaxed text-muted-foreground">
+              Ao continuar, você concorda com nossos{' '}
+              <a href="/" className="underline underline-offset-4">
+                termos de serviço
+              </a>{' '}
+              e{' '}
+              <a href="/" className="underline underline-offset-4">
+                {' '}
+                políticas de privacidade.
+              </a>
+            </p>
           </form>
         </div>
       </div>
