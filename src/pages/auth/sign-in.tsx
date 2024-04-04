@@ -44,7 +44,7 @@ export function SignIn() {
         },
       })
     } catch (err) {
-      console.log(err)
+      toast.error('Tente novamente')
     }
   }
 

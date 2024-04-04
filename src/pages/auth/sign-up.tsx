@@ -47,7 +47,7 @@ export function SignUp() {
         },
       })
     } catch (err) {
-      console.log(err)
+      toast.error('Tente novamente')
     }
   }
 
