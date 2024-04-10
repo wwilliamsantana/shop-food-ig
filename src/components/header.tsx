@@ -16,7 +16,7 @@ export function Header() {
             <Home size={16} />
             Início
           </NavLink>
-          <NavLink to={'/order'}>
+          <NavLink to={'/orders'}>
             <UtensilsCrossed size={16} />
             Pedidos
           </NavLink>

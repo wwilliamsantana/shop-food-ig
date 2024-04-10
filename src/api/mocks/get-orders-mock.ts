@@ -15,7 +15,7 @@ const statuses: OrderStatus[] = [
 
 const orders: Orders = Array.from({ length: 60 }).map((_, i) => {
   return {
-    orderId: `order - ${i + 1}`,
+    orderId: `order-${i + 1}`,
     customerName: `Customer ${i + 1}`,
     total: 2400,
     status: statuses[i % 5],
