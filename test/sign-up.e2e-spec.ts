@@ -12,9 +12,7 @@ test('sign-up success', async ({ page }) => {
 
   const toast = await page.getByText('Cadastrado com sucesso')
 
-  expect(toast).toBeVisible()
-
-  // await page.waitForTimeout(2000)
+  await expect(toast).toBeVisible()
 })
 
 test('sign-up invalid', async ({ page }) => {
@@ -29,7 +27,7 @@ test('sign-up invalid', async ({ page }) => {
 
   const toast = await page.getByText('Credenciais inválidas')
 
-  expect(toast).toBeVisible()
+  await expect(toast).toBeVisible()
 
   // await page.waitForTimeout(2000)
 })
@@ -39,5 +37,5 @@ test('navigate to up login', async ({ page }) => {
 
   await page.getByRole('link', { name: 'Login' }).click()
 
-  expect(page.url()).toContain('/signin')
+  await expect(page.url()).toContain('/signin')
 })

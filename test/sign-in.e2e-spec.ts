@@ -11,9 +11,7 @@ test('sign-in success', async ({ page }) => {
     'Enviamos um link de autenticação para seu email',
   )
 
-  expect(toast).toBeVisible()
-
-  await page.waitForTimeout(2000)
+  await expect(toast).toBeVisible()
 })
 
 test('sign-in invalid', async ({ page }) => {
@@ -25,7 +23,7 @@ test('sign-in invalid', async ({ page }) => {
 
   const toast = await page.getByText('Tente novamente')
 
-  expect(toast).toBeVisible()
+  await expect(toast).toBeVisible()
 
   await page.waitForTimeout(2000)
 })
