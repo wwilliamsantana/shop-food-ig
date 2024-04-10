@@ -47,7 +47,7 @@ export function SignUp() {
         },
       })
     } catch (err) {
-      toast.error('Tente novamente')
+      toast.error('Credenciais inválidas')
     }
   }
 
